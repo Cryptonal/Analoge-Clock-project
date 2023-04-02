@@ -1,0 +1,20 @@
+body{
+    background: url("bg.png");
+}
+
+#clockContainer{
+    position: relative;
+    margin: auto;
+    background-color: red;
+    background: url("clock.png") no-repeat;
+    height: 40vw;
+    width: 40vw;
+    background-size: 100%;
+}
+
+#hour, #minute, #second {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;          /* For rotating the arms */
+}
