@@ -1,1 +1,17 @@
-console.log("Need to implement the logic for the movement/rotation of clock arms")
+setInterval(() => {
+    d = new Date();
+    htime = d.getHours();
+    mtime = d.getMinutes();
+    stime = d.getSeconds();
+
+    //Calculation for all three arms rotation
+    hrotation = 30 * htime + mtime/2;
+    mrotation = 6 * mtime;
+    srotation = 6 * stime;
+
+    //CSS
+    hour.style.transform = `rotate(${hrotation}deg)`;
+    minute.style.transform = `rotate(${mrotation}deg)`;
+    second.style.transform = `rotate(${srotation}deg)`;
+
+}, 1000)
