@@ -1,8 +1,9 @@
-body{
-    background: url("bg.png");
+body {
+    background: url("splash.jpg") no-repeat;
+    background-size: 100%;
 }
 
-#clockContainer{
+#clockContainer {
     position: relative;
     margin: auto;
     background-color: red;
@@ -12,33 +13,39 @@ body{
     background-size: 100%;
 }
 
-#hour, #minute, #second {
+#hour,
+#minute,
+#second {
     position: absolute;
     background: black;
     border-radius: 10px;
-    transform-origin: bottom;          /* For rotating the arms */
+    transform-origin: bottom; /* For rotating the arms */
 }
 
-#hour{
+#hour {
     width: 1.8%;
     height: 25%;
     top: 25%;
     left: 48.8%;
     opacity: 0.8;
+    background-color: #000; /* Set background color to black */
+    box-shadow:0 0 10px #FF5161, 0 0 8px #FF5161, 0 0 16px #FF5161, 0 0 2px #D30302, 0 0 49px #D30302, 0 0 90px #D30302, 0 0 101px #D30302 /* Set multiple text shadows to create the glowing effect */
 }
 
-#minute{
+#minute {
     width: 1.6%;
     height: 30%;
     top: 19%;
     left: 48.8%;
     opacity: 0.8;
+    box-shadow:0 0 10px #FF5161, 0 0 8px #FF5161, 0 0 16px #FF5161, 0 0 2px #D30302, 0 0 49px #D30302, 0 0 90px #D30302, 0 0 101px #D30302 /* Set multiple text shadows to create the glowing effect */
 }
 
-#second{
+#second {
     width: 1%;
     height: 40%;
     top: 9%;
     left: 49.5%;
     opacity: 0.8;
+    box-shadow:0 0 10px #FF5161, 0 0 8px #FF5161, 0 0 16px #FF5161, 0 0 2px #D30302, 0 0 49px #D30302, 0 0 90px #D30302, 0 0 101px #D30302 /* Set multiple text shadows to create the glowing effect */
 }
