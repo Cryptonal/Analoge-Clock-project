@@ -18,3 +18,27 @@ body{
     border-radius: 10px;
     transform-origin: bottom;          /* For rotating the arms */
 }
+
+#hour{
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.8%;
+    opacity: 0.8;
+}
+
+#minute{
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.8%;
+    opacity: 0.8;
+}
+
+#second{
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.5%;
+    opacity: 0.8;
+}
